@@ -30,9 +30,9 @@ cd nome-do-repositorio
 
 python -m venv venv
 
-source venv/bin/activate  # no Linux/macOS
+*source venv/bin/activate  # no Linux/macOS
 
-venv\Scripts\activate     # no Windows
+*venv\Scripts\activate     # no Windows
 
 5. Instale as dependências necessárias com:
 
@@ -79,4 +79,5 @@ Caso não consiga conectar ao banco de dados ou algum outro erro aconteça, conf
 ## Observações
 
 *A aplicação depende de um banco de dados para armazenar as especificações dos jogos e os dados dos usuários. Certifique-se de que o banco de dados está configurado e migrado corretamente.
+
 *O projeto pode ser expandido com mais jogos e funcionalidades, como a integração com APIs externas para obter requisitos de jogos automaticamente.
