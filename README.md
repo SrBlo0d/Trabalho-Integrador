@@ -29,7 +29,9 @@ cd nome-do-repositorio
 4. Crie um ambiente virtual para o projeto e ative-o:
 
 python -m venv venv
+
 source venv/bin/activate  # no Linux/macOS
+
 venv\Scripts\activate     # no Windows
 
 5. Instale as dependências necessárias com:
