@@ -81,7 +81,7 @@ python app.py
 
 Para testar se a aplicação está funcionando corretamente:
 
-1. Acesse a interface web em http://localhost:5000.
+1. Acesse a interface web em github.com/SrBlo0d/Trabalho-Integrador.
 2. Selecione um jogo da lista e insira as especificações do seu computador.
 3. Verifique se a comparação entre a configuração do seu computador e os requisitos do jogo está sendo realizada corretamente.
 
