@@ -44,13 +44,17 @@ pip install -r requirements.txt
 
 2. Crie um arquivo de configuração para as variáveis de ambiente, caso necessário (exemplo: .env):
 
-DB_HOST=localhost
-DB_PORT=3306
-DB_USER=root
-DB_PASSWORD=sua-senha
-DB_NAME=nome-do-banco
+   *postgres_host= postgres-aula.cuebxlhckhcy.us-east-1.rds.amazonaws.com
+   
+   *postgres_dbname= postgresaula # Nome do banco
+   
+   *postgres_user= postgresaula # Nome de usuário
+   
+   *postgres_password= PostgresAula123! # Senha
+   
+   *postgres_port= 5432
 
-3. Execute as migrações do banco de dados, se necessário:
+4. Execute as migrações do banco de dados, se necessário:
 
 python manage.py migrate
 
