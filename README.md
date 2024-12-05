@@ -2,18 +2,17 @@
 
 ## Apresentação Breve
 
-Este projeto é uma aplicação web desenvolvida em Python, que tem como objetivo ajudar os usuários a verificar a configuração necessária para rodar o jogo de sua escolha no computador. Ele oferece uma maneira fácil de comparar as especificações recomendadas e mínimas de diferentes jogos com as configurações do sistema do usuário, ajudando a evitar a compra de um computador que não seja capaz de rodar o jogo desejado.
+Este projeto é uma aplicação web desenvolvida em Python, com o objetivo de ajudar os usuários a verificar as configurações mínimas necessárias para rodar o jogo de sua escolha no computador. O usuário escolhe o jogo diretamente da interface web, e a aplicação compara as especificações mínimas do jogo com as configurações do sistema do usuário. Isso ajuda a evitar a compra de um computador que não consiga rodar o jogo desejado.
 
 ## Objetivo
 
-O objetivo desta aplicação é fornecer uma ferramenta para os jogadores verificarem se seu computador tem a configuração necessária para rodar os jogos que eles desejam jogar. A aplicação ajuda a evitar problemas como a compra de um PC que não suporte o desempenho exigido por um jogo específico.
+O objetivo desta aplicação é fornecer aos usuários uma maneira simples de verificar se o computador possui a configuração mínima necessária para rodar o jogo selecionado. Isso evita problemas como adquirir um PC que não suporte o desempenho básico exigido pelo jogo, garantindo uma experiência de jogo funcional.
 
 ## Funcionalidades
 
-- **Verificação de Configuração**: O usuário pode selecionar o jogo desejado e a aplicação verificará se a configuração do computador é compatível com os requisitos do jogo.
-- **Comparação de Requisitos**: A aplicação compara as especificações mínimas e recomendadas do jogo com as configurações de hardware do computador do usuário.
-- **Sugestões de Melhoria**: Caso o computador não tenha a configuração necessária, a aplicação sugere ajustes ou melhorias no hardware para garantir que o jogo seja jogável sem problemas.
-- **Interface Web**: A aplicação oferece uma interface web simples e interativa para facilitar a consulta e a visualização das informações.
+- **Escolha de Jogo**: O usuário pode selecionar um jogo de uma lista já disponível na aplicação.
+- **Verificação de Configuração Mínima**: A aplicação verifica as especificações mínimas do jogo selecionado em comparação com as configurações de hardware do computador do usuário.
+- **Interface Web Interativa**: A aplicação oferece uma interface web simples e amigável, onde o usuário pode facilmente selecionar o jogo e inserir as configurações de seu computador para fazer a comparação.
 
 ## Instalação de Dependências
 
@@ -24,7 +23,7 @@ O objetivo desta aplicação é fornecer uma ferramenta para os jogadores verifi
 
 3. Navegue até o diretório do projeto:
 
-cd nome-do-repositorio
+cd Trabalho-Integrador
 
 4. Crie um ambiente virtual para o projeto e ative-o:
 
@@ -40,11 +39,23 @@ pip install -r requirements.txt
 
 ## Passo a Passo para Rodar a Aplicação
 
-1. Certifique-se de ter um banco de dados relacional configurado. Este projeto usa [MySQL/PostgreSQL], então, crie o banco de dados e configure as credenciais.
+1. Configuração do Banco de Dados PostgreSQL:
+
+A aplicação usa um banco de dados PostgreSQL. Certifique-se de que seu banco de dados está configurado corretamente. As configurações de acesso ao banco são as seguintes:
+
+*Host: postgres-aula.cuebxlhckhcy.us-east-1.rds.amazonaws.com
+
+*Nome do Banco de Dados: postgresaula
+
+*Usuário: postgresaula
+
+*Senha: PostgresAula123!
+
+*Porta: 5432
 
 2. Crie um arquivo de configuração para as variáveis de ambiente, caso necessário (exemplo: .env):
 
-   *postgres_host= postgres-aula.cuebxlhckhcy.us-east-1.rds.amazonaws.com
+   *postgres_host= postgres-aula.cuebxlhckhcy.us-east-1.rds.amazonaws.com #Host
    
    *postgres_dbname= postgresaula # Nome do banco
    
@@ -54,7 +65,7 @@ pip install -r requirements.txt
    
    *postgres_port= 5432
 
-4. Execute as migrações do banco de dados, se necessário:
+3. Execute as migrações do banco de dados, se necessário:
 
 python manage.py migrate
 
@@ -62,7 +73,7 @@ python manage.py migrate
 
 python app.py
 
-5. Abra o navegador e acesse http://localhost:5000 (ou a porta configurada no seu projeto).
+5. Abra o navegador e acesse github.com/SrBlo0d/Trabalho-Integrador.
 
 6. A interface será carregada, e você poderá selecionar o jogo desejado para verificar se a configuração do seu computador é compatível.
 
